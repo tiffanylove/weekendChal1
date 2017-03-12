@@ -22,9 +22,33 @@ var peopleArray = [
 ];
 
 var peopleIndex = 0;
-var peopleCapacity = peopleArray.size();
+var peopleCapacity = peopleArray.length;
 $(document).ready(function(){
   $("#name").html(peopleArray[peopleIndex].name);
-  $("#should").html(peopleArray[peopleIndex].shoutout);
+  $("#shout").html(peopleArray[peopleIndex].shoutout);
   $("#count").html((peopleIndex+1) + '/' + peopleCapacity);
+
+  $('#prev').click(prev);
+  $('#next').click(next);
 });
+function prev()
+{
+  if(peopleIndex > 0)
+  {
+    peopleIndex--;
+  }
+  else {
+    {
+      peopleIndex = peopleCapacity -1;
+    }
+    $("#name").html(peopleArray[peopleIndex].name);
+    $("#shout").html(peopleArray[peopleIndex].shoutout);
+    $("#count").html((peopleIndex+1) + '/' + peopleCapacity);
+
+  }
+  function next()
+  {
+    if(peopleIndex<(peopleCapacity-1))
+  {
+    peopleIndex++;
+  }
