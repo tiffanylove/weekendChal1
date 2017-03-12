@@ -23,7 +23,13 @@ var peopleArray = [
 
 var peopleIndex = 0;
 var peopleCapacity = peopleArray.length;
+
 $(document).ready(function(){
+  update();
+  for()
+  {
+    $(".indicators").append("<span id=>")
+  }
   $("#name").html(peopleArray[peopleIndex].name);
   $("#shout").html(peopleArray[peopleIndex].shoutout);
   $("#count").html((peopleIndex+1) + '/' + peopleCapacity);
