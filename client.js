@@ -24,5 +24,7 @@ var peopleArray = [
 var peopleIndex = 0;
 var peopleCapacity = peopleArray.size();
 $(document).ready(function(){
-  
+  $("#name").html(peopleArray[peopleIndex].name);
+  $("#should").html(peopleArray[peopleIndex].shoutout);
+  $("#count").html((peopleIndex+1) + '/' + peopleCapacity);
 });
