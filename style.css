@@ -1,6 +1,6 @@
 .indicators
 {
-	width: 600px;
+	width: 1000px;
 	height: 60px;
 }
 
@@ -8,9 +8,9 @@
 {
 	background-color: gray;
 	color: gray;
-	width: 25px;
-	height: 25px;
-	padding: 5px;
-	border: 5px solid gray;
+	width: 500px;
+	height: 100px;
+	padding: 10px;
+
 	margin: 5px;
 }
