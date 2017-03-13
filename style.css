@@ -1,9 +1,16 @@
 .indicators
 {
-background-color: 'gray';
-width: '20px';
-height: '20px';
-padding: '0px';
-border:"1 px solid gray";
-margin: "5px";
+	width: 600px;
+	height: 60px;
+}
+
+.indicators > span
+{
+	background-color: gray;
+	color: gray;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	border: 5px solid gray;
+	margin: 5px;
 }
